@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Auth App</title>
+</head>
+<body>
+    <button id="login" (click)="login()">Login</button>
+    <button id="logout" *ngIf="authService.user" (click)="logout()" style="display: none;">Logout</button>
+    <div id="user-info" *ngIf="authService.user">
+        <pre>{{ authService.user | json }}</pre>
+    </div>
+
+    <script type="module" src="./client.js"></script>
+</body>
+</html>
