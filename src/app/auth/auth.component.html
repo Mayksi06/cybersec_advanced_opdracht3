@@ -5,6 +5,7 @@
     <title>Simple Auth App</title>
 </head>
 <body>
+    <h1>Test</h1>
     <button id="login" (click)="login()">Login</button>
     <button id="logout" *ngIf="authService.user" (click)="logout()" style="display: none;">Logout</button>
     <div id="user-info" *ngIf="authService.user">
